@@ -33,6 +33,9 @@ The system is organized into three main components: frontend dashboard, backend 
 - Communicates with the backend via HTTP APIs to fetch expense lists, decisions, and analytics.
 - Designed as the primary interface for business users, finance analysts, and managers.
 
+
+![Frontend UI](images/Frontend-UI.png)
+
 ### 3.2 Backend (FastAPI Service)
 
 - REST API implemented using **FastAPI**, running under **Uvicorn**.
