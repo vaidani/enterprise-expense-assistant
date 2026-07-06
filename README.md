@@ -74,11 +74,21 @@ Response structure (example):
 - Uses the **Gemini API** (for example, `gemini-2.5-flash`) to generate clear, user-friendly explanations for each decision.
 - Includes basic fallback behavior for explanation generation when API quota is exhausted or unavailable, so the workflow still returns a reasonable explanation string.
 
+
 ### 3.4 Optional Antigravity Agent Building
 
 The main multi-agent implementation uses a custom Python workflow and the Gemini API. As an **optional, experimental** extension, the project also considers using **Antigravity** for agent building and orchestration. Antigravity can be used to define and run agents in an alternative style, allowing comparison of ergonomics and performance with the current ADK-based design. The core project does not depend on Antigravity to run; it is purely optional for further experimentation.
 
 ---
+## Antigravity UI
+
+![Antigravity UI](images/Antigravity-UI.png)
+
+
+## Antigravity Open IDE
+
+![Antigravity Open IDE](images/Antigravity-Open-IDE.png)
+
 
 ## 4. Features
 
@@ -244,6 +254,11 @@ pip install -r requirements.txt
 python main.py
 ```
 
+## Multi-Agent Architecture
+
+![Multi-Agent Architecture](images/Multi-Agent-Architecture.png)
+
+
 4. The script will iterate through sample expenses and print, for each expense:
 
 - Expense details (ID, employee, amount, category, description, date).
@@ -281,6 +296,10 @@ python agent.py
 This prototype shows a more compact agent logic, useful for understanding the core idea before the system was expanded into a fully modular, multi-agent design.
 
 ---
+
+## Single Agent Architecture
+
+![Single Agent Architecture](images/Single-Agent-Architecture.png)
 
 ## 7. Usage Walkthrough
 
